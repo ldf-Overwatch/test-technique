@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start:server": "node app.js",
+    "dev": "nodemon --watch src --exec \"yarn run start:server\"",
+    "build-docker": "docker build -t app_server .",
+    "run-docker": "docker run --name app_server --network app_network -v $(pwd):/app/app_server -p 1337:1337  app_server",
+    "start:docker": "docker start app_server"
+  }
+}
