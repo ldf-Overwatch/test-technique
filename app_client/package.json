@@ -23,7 +23,8 @@
     "dev": "nodemon --watch src --exec \"yarn run start:client\"",
     "build-docker": "docker build -t app_client .",
     "run-docker": "docker run --name app_client --network app_network -v $(pwd):/app/app_client -p 3003:3003  app_client",
-    "start:docker": "docker start app_client"
+    "start:docker": "docker start app_client",
+    "stop:docker": "docker stop app_server"
   },
   "eslintConfig": {
     "extends": [
