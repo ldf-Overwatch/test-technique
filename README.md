@@ -9,6 +9,12 @@ To start, from the project root, run the following command to create the Docker 
 yarn docker-network
 ```
 
+### Start database mongodb Docker environment
+
+```
+docker-compose up
+```
+
 ### Start the client Docker environment
 To start the client Docker environment, navigate to the `app_client` directory and run the following commands:
 

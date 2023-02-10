@@ -73,7 +73,7 @@ export default function AddEmployee() {
             <TextField
               required
               id="outlined-required"
-              name="name"
+              name="lastname"
               label="Nom"
               onChange={handleChange}
 
